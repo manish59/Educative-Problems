@@ -1,0 +1,22 @@
+Problem Statement:
+    Just in nested loop just compare with i and j situation for example
+    for i in list:
+        for j in list:
+            if i==j
+                return true
+     problem O(n2)
+Better approach:
+    Use a hashset and search if the link node is present or not
+    Hashset=[i for i in list]
+    for i in list2:
+        if i in Hashset:
+            return True
+    return False
+    Better approach O(n) and space complexity O(n)
+
+Even better approach:
+    first find the length of two lists
+    then make the differnce between two lists
+    Make two pointers
+    first pointer: travel it through the difference
+    then after that travel both first and second pointer at the same time and check if they two intersect
